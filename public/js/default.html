@@ -1,0 +1,33 @@
+<div id="list">
+    <h2 style="text-align: center;color:#C03434">Today's Best Deals</h2>
+    <ol>
+        {#list.shirts}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <ul>
+            <li style="color: red"><b>{name}</b></li>
+            <br>
+            <a href="#" onclick="loadPage('shirtdetails?id={id}')"><img src="{url1}" height="400" width="400"></img><img src="{url2}" height="400" width="400"></img>
+            </a>
+            <br>
+            <ul style="color:#C03434">
+                <li><b>{default}</b></li>
+                <li><b>{default}</b></li>
+                <li><b>{default}</b></li>
+                <li><b>{default}</b></li>
+                <li><b>{default}</b></li>
+                <li><b>{default}</b></li>
+                <li><b>{default}</b></li>
+            </ul>
+        </ul>
+        {/list.shirts}
+    </ol>
+</div>

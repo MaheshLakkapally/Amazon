@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text],
+input[type=password] {
+    width: 50%;
+    padding: 8px 12px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 20%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+</style>
+
+<body style="text-align: center;">
+    <div class="imgcontainer">
+        <img src="images\signup.jpg" alt="Avatar" class="avatar">
+    </div>
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <br>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <br>
+            <br> Age:
+            <input type="int" name="Age" required="Age" autocomplete="on">
+            <br>
+            <br>Gender:
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <br>Address:
+            <input type="text " name="Address " placeholder="Address" required="Address">
+            <br>
+            <br> City:
+            <input type="text" name="City" required="text">
+            <br>
+            <br> State:
+            <input list=" States ">
+            <datalist id="States ">
+                <option value="CA ">California</option>
+                <option value="TX ">Texas</option>
+                <option value="NJ ">New Jersy</option>
+                <option value="FL ">Florida</option>
+            </datalist>
+            <br>
+            <br>
+            <br> Zip:
+            <input type="text " name="Zip " required="Zip ">
+            <br>
+            <br> Notes:
+            <textarea name="message" rows="10" cols="50" required="message"></textarea>
+            <br>
+            <input type="checkbox" checked="checked"> Remember me
+            <br>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <div class="clearfix" style="text-align: center;">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amazon.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dustjs-linkedin/2.7.5/dust-core.min.js"></script>
+    <script src="js/shirts.js"></script>
+    <script src="js/details1.js"></script>
+    <script src="js/details2.js"></script>
+    <script src="js/default.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><img src="images/log.jpg" height="100" width="200"></li>
+                    <li><a href="#" onclick="loadPage('home.html');">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Clothes</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Computers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="loadPage('getlist');">Todays Deals</a></li>
+                    <li><a href="#" onclick="loadPage('getlis');">Giftcards</a></li>
+                    <li><a href="#" onclick="loadPage('getlocation');">Orders</a></li>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="loginpage.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav navbar-nav">
+    </ul>
+    <div id="content">
+        <style>
+        .mySlides {
+            display: none;
+        }
+        </style>
+        <div class="w3-content w3-section" style="max-width:250%;max-height: 300%">
+            <img align="center" class="mySlides" src="images/image.jpg" style="max-width: 100%;max-height: 150%">
+            <img class="mySlides " src="images/prime.jpg" style="max-width: 100%;max-height: 100%">
+            <img align="center" class="mySlides" src="images/video.jpg" style="max-width: 100%;max-height: 150%">
+        </div>
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </div>
+    <script type="text/javascript">
+    "use strict"
+    window.onload = loadPage('home.html');
+
+    function loadPage(pageUrl) {
+        var xhr = new XMLHttpRequest();
+        console.log("xhr=" + xhr);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var serverData = xhr.responseText;
+                var htmlData = '';
+                if (pageUrl == "getlist") {
+                    var jsonObj = JSON.parse(serverData);
+                    dust.render('shirts', jsonObj, function(err, htmlOutput) {
+                        document.getElementById('content').innerHTML = htmlOutput;
+                    });
+                } else if (pageUrl.startsWith("shirtdetails?id=")) {
+                    var jsonObj = JSON.parse(serverData);
+                    console.log(jsonObj);
+                    dust.render('details1', jsonObj, function(err, htmlOutput) {
+                        console.log(err);
+                        console.log(htmlOutput);
+                        document.getElementById('content').innerHTML = htmlOutput;
+                    });
+                } else if (pageUrl == 'sortPrice') {
+                    var params = JSON.parse(serverData);
+                    dust.helpers.customSort = function(params, chunk, context, bodies) {
+                        params.list.shirts.sort(function(a, b) {
+                            return ((a.rate < b.rate) ? -1 : ((a.rate > b.rate) ? 1 : 0));
+                        });
+                    };
+
+                    dust.helpers.customSort(params);
+                    dust.render('shirts', params, function(err, htmlOutput) {
+                        document.getElementById('content').innerHTML = htmlOutput;
+                    });
+
+                } else {
+
+                    htmlData = serverData;
+                    document.getElementById("content").innerHTML = htmlData;
+                }
+            }
+        }
+        xhr.open("GET", pageUrl, true);
+        xhr.send();
+    }
+    </script>
+</body>
+
+</html>

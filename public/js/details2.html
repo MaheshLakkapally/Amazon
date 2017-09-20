@@ -1,0 +1,31 @@
+<div id="list">
+    <h2 style="text-align: center;color:#C03434">Shirt full details</h2>
+    <ol>
+        {#list.shirts}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <ul style="color: red">
+            <li>{url1}</li>
+            <li>{url2}</li>
+            <li><b>{name}</b></li>
+            <li><b>{rate}</b></li>
+            <li><b>{type}</b></li>
+            <li><b>{size}</b></li>
+            <li><b>{fabric}</b></li>
+            <li><b>{desc}</b></li>
+            <li><b>{reviews}</b></li>
+            <br>
+            <a href="#" onclick="loadPage('shirtdetails?id={id}')"><img src="https://pics.ae.com/is/image/aeo/1152_9744_106_f?$pdp-main$" height="400" width="400"></img>
+            </a>
+        </ul>
+        {/list.shirts}
+    </ol>
+</div>

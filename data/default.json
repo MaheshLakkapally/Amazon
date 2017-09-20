@@ -1,0 +1,23 @@
+{
+
+    "shirtdetails": {
+        "id": "3",
+        "name": "Classic Plaid Linen Shirt",
+        "rate": "44.95",
+        "type": "shirt",
+        "size": "large",
+        "fabric": "cotton",
+        "desc": "A|X Armani Exchange Men's Ax Tonal and Contrast Logo Core Crew Neck",
+        "url1": "https://pics.ae.com/is/image/aeo/1152_9744_106_f?$pdp-main$",
+        "url2": "https://pics.ae.com/is/image/aeo/1152_9744_106_b?$pdp-main$"
+    },
+    "reviews": [{
+        "name": "Nani",
+        "comment": "shirt quality is good",
+        "rating": "5"
+    }, {
+        "name": "Nani",
+        "comment": "shirt quality is good",
+        "rating": "5"
+    }]
+}

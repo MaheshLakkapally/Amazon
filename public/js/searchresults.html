@@ -1,0 +1,30 @@
+<div class="sorting">
+    Search:
+    <select name="sorting" id="sorting">
+        <option value="0"> Select </option>
+        <option value="1"> Price: Low to High </option>
+        <option value="2"> Price: High to Low </option>
+        <option value="3"> Reset </option>
+    </select>
+</div>
+<div id="searchResults">
+    {#results}
+    <div class='row'>
+        <div id='imgBox'>
+            <img id='img1' src='{image}' />
+        </div>
+        <div id='productInfo1'>
+            <a class='productLink' href='/productDetails?id={id}'>
+                <h1>{name}</h1></a>
+            <p>by<i>{author}</i></p>
+            <p>Price</p>
+            <p>Paperback ${price}</p>
+            <p>Paperback $14.02</p>
+        </div>
+        <div id='productInfo2'>Customer Ratting
+            <p>****</p>
+            <p>Trade in yours for an Amazon Gift Card up to $2.25</p>
+        </div>
+    </div>
+    {/results}
+</div>

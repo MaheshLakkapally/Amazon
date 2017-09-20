@@ -1,0 +1,31 @@
+{
+    "list": {
+        "shirts": [
+            { "id": 1, "name": "Short Sleeve Oxford Shirt", "rate": 24.75, "type": "shirt", "size": "large", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/2154_9821_100_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/2154_9821_100_b?$pdp-main$" },
+            { "id": 2, "name": "Classic Plaid Linen Shirt", "rate": 44.95, "type": "shirt", "size": "small", "fabric": "linen", "url1": "https://pics.ae.com/is/image/aeo/1152_9744_106_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1152_9744_106_b?$pdp-main$" },
+            { "id": 3, "name": "Full Hands Linen Shirt", "rate": 48.95, "type": "shirt", "size": "medium", "fabric": "linen", "url1": "https://pics.ae.com/is/image/aeo/1152_9744_400_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1152_9744_400_b?$pdp-main$" },
+            { "id": 4, "name": "Active Dyed Crew T-Shirt", "rate": 19.99, "type": "Tshirt", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1162_8708_400_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1162_8708_400_b?$pdp-main$" },
+            { "id": 5, "name": "Solid Flex Crew T-Shirt", "rate": 14.85, "type": "Tshirt", "size": "small", "fabric": "silk", "url1": "https://pics.ae.com/is/image/aeo/1164_8764_856_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1164_8764_856_b?$pdp-main$" },
+            { "id": 7, "name": "3/4 Sleeve T-Shirt", "rate": 29.95, "type": "Tshirt", "size": "medium", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/2171_8587_403_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/2171_8587_403_b?$pdp-main$" },
+            { "id": 8, "name": "Active Long Crew T-Shirt", "rate": 28.75, "type": "Tshirt", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1182_2578_064_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1182_2578_064_b?$pdp-main$" },
+
+            { "id": 9, "name": "Flex Solid Pique Polo", "rate": 54.85, "type": "Polo", "size": "large", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1165_8500_100_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1165_8500_100_b?$pdp-main$" },
+
+            { "id": 10, "name": "Flex Solid Black Polo", "rate": 44.95, "type": "Polo", "size": "medium", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1165_8500_001_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1165_8500_001_b?$pdp-main$" },
+            { "id": 11, "name": "Palm Tree Crew Sweater", "rate": 49.50, "type": "Sweater", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1142_0055_064_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1142_0055_064_b?$pdp-main$" },
+            { "id": 12, "name": "Flex Solid Black Sweater", "rate": 64.85, "type": "Sweater", "size": "small", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1142_0055_410_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1142_0055_410_b?$pdp-main$" },
+            { "id": 13, "name": "Active Black Hoodie", "rate": 74.95, "type": "Hoodie", "size": "large", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/0193_9698_001_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/0193_9698_001_b?$pdp-main$" },
+            { "id": 14, "name": "Active White Hoodie", "rate": 84.75, "type": "Hoodie", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/0193_9698_100_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/0193_9698_100_b?$pdp-main$" },
+            { "id": 15, "name": "Military Bomber Jacket", "rate": 89.85, "type": "Jacket", "size": "small", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/2101_9849_309_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/2101_9849_309_b?$pdp-main$" },
+            { "id": 16, "name": "Garmet Dyed Shirt Jacket", "rate": 99.95, "type": "Jacket", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/2101_9873_738_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/2101_9873_738_b?$pdp-main$" },
+            { "id": 17, "name": "Flat Front Short", "rate": 44.75, "type": "short", "size": "large", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1131_6376_234_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1131_6376_234_b?$pdp-main$" },
+            { "id": 18, "name": "Flex Front Short", "rate": 34.85, "type": "short", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1131_6375_020_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1131_6375_020_b?$pdp-main$" },
+            { "id": 19, "name": "Extreme Flex Skinny Jeans", "rate": 64.95, "type": "pant", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/0119_3744_947_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/0119_3744_947_b?$pdp-main$" },
+            { "id": 20, "name": "Extreme Flex Super Skinny Jeans", "rate": 74.75, "type": "pant", "size": "large", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1112_3810_081_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1112_3810_081_b?$pdp-main$" },
+            { "id": 21, "name": "Extreme Flex Skinny Chino", "rate": 49.75, "type": "pant", "size": "large", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1120_3793_400_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1120_3793_400_b?$pdp-main$" },
+            { "id": 22, "name": "Extreme Flex Super Skinny Chino", "rate": 54.85, "type": "pant", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1120_3793_451_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1120_3793_451_b?$pdp-main$" },
+            { "id": 23, "name": "Active Side Stripe Jogger", "rate": 74.95, "type": "jogger", "size": "Xlarge", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/1229_3807_410_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/1229_3807_410_b?$pdp-main$" },
+            { "id": 24, "name": "Active Side Stripe Jogger", "rate": 54.75, "type": "jogger", "size": "large", "fabric": "cotton", "url1": "https://pics.ae.com/is/image/aeo/0120_3815_064_f?$pdp-main$", "url2": "https://pics.ae.com/is/image/aeo/0120_3815_064_b?$pdp-main$" }
+        ]
+    }
+}
